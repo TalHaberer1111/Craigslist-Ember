@@ -1,0 +1,12 @@
+<div class="list">
+  <h3>{{model.title}}</h3>
+  <h6>Address: {{model.address}}</h6>
+  <h6>Cost: {{model.cost}}</h6>
+  <h6>Date: {{model.date}}</h6>
+  <h6>City: {{#link-to 'city' model.city.id}}{{model.city.name}}{{/link-to}}</h6>
+  <h6>Category: {{model.category}}</h6>
+  {{update-listing updateListing="updateListing" listing=model}}
+  <br>
+  {{delete-listing listing=model destroyListing="destroyListing"}}
+
+</div>

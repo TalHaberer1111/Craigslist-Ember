@@ -1,0 +1,12 @@
+<h2>Select a city</h2>
+
+{{#each model.cities as |city|}}
+  {{#link-to 'city' city.id}} {{city.name}}{{/link-to}} {{city-popularity city}}
+  <br>
+  <br>
+{{/each}}
+
+
+<br>
+<br>
+{{add-city addCity="addCity"}}
