@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         country: this.get('country') ? this.get('country') : "",
       };
       this.set('addCityForm', false);
-      this.sendAction('addCity', params)
+      this.sendAction('addCity', params);
     }
   }
 });

@@ -1,12 +1,17 @@
-<h2>Select a city</h2>
+<h2 class="you">Select a city</h2>
+<div class="cities">
 
 {{#each model.cities as |city|}}
   {{#link-to 'city' city.id}} {{city.name}}{{/link-to}} {{city-popularity city}}
   <br>
   <br>
 {{/each}}
+</div>
 
 
 <br>
 <br>
+<div class="addCity">
+
 {{add-city addCity="addCity"}}
+</div>
